@@ -1,0 +1,404 @@
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./index2.css">
+        <link rel="stylesheet" href="./CSS/bootstrap-utilities.min.css">
+        <script defer src="JS/bootstrap.bundle.min.js"></script>
+        <title>Document</title>
+    </head>
+</head>
+<body>
+    <div id="main" class="container-fluid">
+            <!-- bar  -->
+        <div id="bar" class="border d-flex justify-content-between p-2 rounded-top-4">
+            <div>
+                <span><a href="#" class="text-decoration-none">Case</a></span>
+            </div>
+            <div>
+                
+                <span><a href="#" class="text-decoration-none"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></span>
+            </div>
+        </div>
+        <div  id="contentOfTheFieldset" class="container-fluid border border-top-0 p-5 ">
+            <fieldset class="border  border-1 ms-2 ps-4 fieldSet col-xl col-sm">
+                <!-- <legend> New </legend> -->
+                <div id="content" >
+                        
+            
+                    <!-- first line of the fieldset  -->
+                    <div id="division1" class="row" >
+                        <div id="divsub1" class="col-xl-6 col-sm-12">
+                            <label for="client" class="right-align-lables"><i class="text-danger">*</i>Client:</label>
+                            <input type="text" name="client" id="client">
+                            <i class="fa fa-question-circle" style="font-size:20px; color: rgb(35, 108, 147);"></i>
+                        </div>
+                        <div id="divsub2" class="col-xl-3 col-sm-12">
+                            <span>
+                                <i class="text-danger">*</i>Contacted By: 
+                                <input type="radio" name="var" id="var">
+                                <label for="var" class="cursor-pointer" >VAR</label>
+                                <input type="radio" name="var" id="Client">
+                                <label for="Client" class="cursor-pointer">Client</label>
+                            </span>
+                        </div>
+                        <div id="divsub3" class="col-xl-3 col-sm-12">
+                            <span>
+                                
+                                <label for="date" class="right-align-lables ms-4">&nbsp;<i class="text-danger">*</i>Date:</label>
+                                <input type="date" name="date" id="date" value="2013-01-08">
+                            </span>
+                        </div>
+                    </div>
+                    
+            
+                    <!-- second line of the fieldset  -->
+            
+                    <div id="division2" class="row">
+                        
+                        <div id="div2sub1" class="col-xl-6 mt-1 col-sm-12">
+                            <label for="caseType" class="right-align-lables"><i class="text-danger">*</i>Case Type: </label>
+                            <select name="choice1" id="caseType">
+                                <option value="NIL"> General case</option>
+                            </select>
+                        </div>
+                        <div id="div2sub2" class="col-xl col-sm-12 ">
+                            <span id="group">
+                                <i class="text-danger">*</i>
+                                Type: 
+                                <input type="radio" name="var2" id="Agent">
+                                <label for="Agent" class="cursor-pointer">Agent</label>
+                                <input type="radio" name="var2" id="Call">
+                                <label for="Call" class="cursor-pointer">Call</label>
+                                <input type="radio" name="var2" id="RDP">
+                                <label for="RDP" class="cursor-pointer">RDP</label>
+                                <input type="radio" name="var2" id="Email">
+                                <label for="Email" class="cursor-pointer">Email</label>
+                                <input type="radio" name="var2" id="Ticket">
+                                <label for="Ticket" class="cursor-pointer">Ticket</label>
+                                <input type="radio" name="var2" id="Other">
+                                <label for="Other" class="cursor-pointer">Other</label>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Third line of the fieldset  -->
+                    
+                    <div id="division3" class="row">
+                        <div id="div3sub1" class="col-xl-6 col-sm-12 mt-1">
+                            <label for="productOption" class="right-align-lables"><i class="text-danger">*</i>Product: </label>
+                            <select name="choice13" id="productOption">
+                                <option value="NIL" id="option13">&nbsp;</option>
+                            </select>
+                        </div>
+                        <div id="div3sub2" class="col-xl-4 col-sm-12">
+                            <label for="version">Version: </label>
+                            <select name="version" id="vchoice1">
+                                <option value="NIL"></option>
+                            </select>
+                        </div>     
+                    </div>
+
+                    <div id="division33" class="row">
+                        <div id="div33sub1" class="col-xl col-sm-12">
+                            <label for="module" class="right-align-lables">Module: </label>
+                            <select name="module" id="module">
+                                <option value="NIL" id="moduleOption">&nbsp;</option>
+                            </select>
+                            <i class="fa fa-question-circle" style="font-size:20px; color: rgb(35, 108, 147);"></i>
+                        </div>
+                    </div>
+
+                    <!-- Fifth line of the fieldset  -->
+                    <div id="division5" class="row">
+                        <div id="div5sub1" class="col-xl-6 col-sm-12">
+                            <label for="AttachCase" class="right-align-lables">Attach Case(s): </label>
+                            <input type="text" name="AttachCase" id="attachCase">
+                        </div>
+                        <div id="div5sub2" class="col-xl-6 col-sm-12">
+                            <input type="radio" name="Attach" id="AttachSol">
+                            <label for="AttachSol" ><i class="text-danger">*</i>Attach Solution(s): <i class="fa fa-file" style="font-size:14px"></i></label>
+                            <input type="radio" name="Attach" id="AttachNote">
+                            <label for="AttachNote">Attach Note</label>
+                        </div>     
+                    </div>
+
+                    <!-- sixth line of the fieldset -->
+
+                    <div id="division6" class="row">
+                        <div id="div6sub1" class="col-xl-6 col-sm-12  d-flex m-1">
+                            <div>
+                                <label for="textbox" id="textboxlbl" class="right-align-lables"><i class="text-danger">*</i>Problem:&nbsp;</label>
+                            </div>
+                            <div>
+                                <textarea name="textbox" id="textBoxDiv6" class="form-control border-black"  rows="2"></textarea>
+                            </div>
+                        </div>  
+                    </div>
+                    <div id="divison7" class="row">
+                        <div id="div7sub1" class="col-xl-6 col-sm-12 d-flex m-1">
+                            <div>
+                                <label for="textbox" id="textboxlbl" class="right-align-lables" ><i class="text-danger">*</i>Support Solution:&nbsp;</label>
+                            </div>
+                            <div id="textboxdiv7">
+                                <textarea name="textbox" id="textBoxDiv7" class="form-control border-black" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seventh line of the fieldset  -->
+
+                    <div id="division8" class="row">
+                        <div id="div8sub1" class="d-flex mt-1">
+                            <div id="div8sub1support" class="col-xl-5 col-sm-12">
+                                <div>
+                                    <label for="supportby" class="right-align-lables" ><i class="text-danger">*</i>Supported By: </label>
+                                    <select name="supportby" id="supportBy" class="common-space">
+                                        <option value="NIL">Hiren Rathod</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="div8sub1assign" class="col-xl-4 col-sm-12">
+                                    <div>
+                                        <label for="AssingTo" class="right-align-lables-2"><i class="text-danger">*</i>Assign To: </label>
+                                        <select name="AssingTo" id="AssignTo" class="common-space">
+                                            <option value="NIL">Hiren Rathod*</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div id="div8sub1called" class="col-xl-3 col-sm-12">
+                                <div>
+                                    <label for="Calledby" class="right-align-lables" style="width: 10.7rem;">Called By: </label>
+                                    <select name="Calledby" id="Calledby" class="common-space">
+                                        <option value="NIL"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                    <!-- Eight line of the fieldset  -->
+
+                    <div id="division9" class="row">
+                        <div id="div9sub1" class="d-flex">
+                            <div id="div9sub1session" class="col-xl-5 col-sm-12">
+                                <label for="SessionId" class="right-align-lables"><i class="text-danger">*</i>Session ID: </label>
+                                <input type="text" id="sessionid">
+                                <span id="extrainfo">Get the Session Data</span>
+                            </div>
+                            <div id="div9sub1agent" class="col-xl-6 col-sm-12">
+                                <label for="Agentno"  class="right-align-lables-2"><i class="text-danger">*</i>Agent No: </label>
+                                <select name="Agentno" id="Agentno" class="common-space">
+                                    <option value="NIL"></option>
+                                </select>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Ninth line of the fieldset  -->
+
+                    <div id="division10" class="row" >
+                        <div id="div10sub1" class="d-flex">
+                            <div id="div10sub1priority" class="col-xl-5 col-sm-12">
+                                <label for="Priority" class="right-align-lables"><i class="text-danger">*</i>Priority: </label>
+                                <select name="Priority" id="Priority" class="common-space">
+                                    <option value="NIL">3 - Normal</option>
+                                </select>
+                                <i class="fa fa-question-circle" style="font-size:20px; color: rgb(35, 108, 147);"></i>
+                            </div>
+                            <div id="div10sub1pstype" class="col-xl-4 col-sm-12">
+                                <label for="PSType" class="right-align-lables-2">PS Type: </label>
+                                <select name="PSType" id="pstype" class="common-space">
+                                    <option value="NIL"></option>
+                                </select>
+                            </div>
+                            <div id="div10sub1checkbox" class="col-xl-4 col-sm-12">
+                                <label for="dailyLog" class="ms-5 "></label>
+                                <input type="checkbox" class="ms-2 " name="DailyLog" id="dailyLog">
+                                <label for="dailyLog"  class="checkbox cursor-pointer" >Daily Log</label>
+                                <input type="checkbox" class="ms-3 " name="LIA" id="LogInterfaceAct">
+                                <label for="LogInterfaceAct" class="checkbox cursor-pointer">Log Interface Activity</label>
+                            </div>
+
+                        </div> 
+                        
+                    </div>
+
+                    <!-- Tenth line of the fieldset  -->
+
+                    <div id="division11" class="row">
+                        <div id="div11sub1" class="d-flex">
+                            <div id="browse" class="col-xl-3 col-sm-12">
+                                <label for="File" class="right-align-lables">Upload File:</label>
+                                <button name="File" class="border border-1 rounded-2 px-4 browseButton">Browse</button>
+                                <label for="File">&nbsp;No file Selected.</label>
+                                
+                            </div>
+                            <div id="attach" class="col-xl-6 col-sm-12">
+                                <button class="border border-1 rounded-2 px-4 browseButton">Attach More</button>
+                            </div>
+                            <div id="notify" class="col-xl col-sm-12">
+                                <label for="statusupdate" class="right-align-lables" style="width: 170;">Notify on status Update: </label>
+                                <input type="text" name="statusupdate" id="statusupdate" class="common-space">
+                                <i class="fa fa-question-circle" style="font-size:20px; color: rgb(35, 108, 147);"></i>
+                            </div>
+                        </div>
+                        <div id="div11sub2" >
+                            <div>
+                                <div id="" class="text-danger"><label for="" class="right-align-lables"></label>[Max file size 2MB]</div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!--  Eleventh line of the fieldset  -->
+
+                    <div id="division12" class="row">
+                        <div class="col-xl col-sm-12">
+                            <label for="status" class="right-align-lables">Status: </label>
+                            <select name="status" id="status">
+                                <option value="NIL">Pending</option>
+                            </select>
+                            <i class="fa fa-question-circle" style="font-size:20px; color: rgb(35, 108, 147);"></i>
+                        </div>
+                    </div>
+
+                    <!-- Twelfth line of the fieldset -->
+
+                    <div id="division13" class="row">
+                        <div id="div13sub1" class="d-flex">
+                            <div id="followupreq" class="col-xl-4 col-sm-12">
+                                <label for="followup" class="right-align-lables">Followup Required?: </label>
+                                <select name="followup" id="followupreq">
+                                    <option value="NIL">Yes</option>
+                                </select>
+                            </div>
+                            <div id="followupdate" class="col-xl-5 col-sm-12">
+                                <div id="followUp">
+                                    <label for="date" ><i class="text-danger">*</i>Next followup date:</label>
+                                    <input type="text"  id="date" class="datetime" value="11-10-2018">
+                                    <input type="text" name="time" class="time" id="time" value="11:00">
+                                    <select name="datetime" name="AMPM" class="AMPM" id="AMPM">
+                                        <option value="NIL">AM</option>
+                                        <option value="NIL">PM</option>
+                                    </select>   
+                                </div>
+                            </div>
+                            <div id="followupby" class="col-xl-3 col-sm-12  d-flex">
+                                <label for="followupbyoption" class="right-align-lables ms-5" ><i class="text-danger">*</i>Next followup by:&nbsp;</label>
+                                <select name="followupby" id="followupbyoption" class="common-space">
+                                    <option value="NIL">Hiren Rathod*</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Twelfth line of the fieldset -->
+                    <div id="division14" class="row">
+                        <div class="col-xl-4 col-sm-12">
+                            <label for="bill" class="right-align-lables">Billable?:</label>
+                            <select name="bill" id="bill">
+                                <option value="NIL">&nbsp;No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Thirteenth line of the fieldset -->
+                    <div id="division15" class="row">
+                        <div class="d-flex">
+                            <div class="col-xl-3 col-sm-12">
+                                <label for="text-dangertcall" class="right-align-lables"><i class="text-danger">*</i>text-dangert Call:</label>
+                                <input type="text" name="text-dangertcall" id="time" class="time" value="09:30">
+                                <select name="datetime" class="AMPM" id="AMPM">
+                                    <option value="NIL">AM</option>
+                                    <option value="NIL">PM</option>
+                                </select>
+                            (hh:mm)
+                            </div>
+                            <div class="col-xl-2 ms-2"></div>
+                            <div id="endCall" class="col-xl-3 col-sm-12 ms-2">
+                                <div class="ms-4">
+                                    <label for="endcall" ><i class="text-danger">*</i>End Call:</label>
+                                    <input type="text" name="endcall"  id="time" class="time" value="10:30">
+                                    <select name="datetime" class="AMPM" id="AMPM">
+                                        <option value="NIL">AM</option>
+                                        <option value="NIL">PM</option>
+                                    </select>
+                                    (hh:mm)
+                                </div>
+                            
+                            </div>
+                            <div  class="col-xl-4 col-sm-12 d-flex justify-content-center m-2 ps-5">
+                                <label for="duration" class="right-align-lables"><i class="text-danger">*</i>Duration: &nbsp;</label>
+                                <input type="text" name="duration" id="duration" class="duration">Hr(s)&nbsp;&nbsp;
+                                <input type="text" name="duration" id="duration" class="duration">Min(s)
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- fourteenth line of the fieldset  -->
+                    <div id="division16" class="row">
+                        <div class="d-flex">
+                            <div class="col-xl-8 col-sm-12">
+                                <label for="prmdate" class="right-align-lables"><i class="text-danger">*</i>Promised Date:</label>
+                                <input type="date" name="prmdate" id="prmdate">
+                            </div>
+                            
+                            <div class="durtn col-xl-4 col-sm-12 d-flex justify-content-center m-1 ms-2 ps-5">
+                                <div class="ms-4">
+                                    <label for="actduration" class="right-align-lables"><i class="text-danger">*</i>Actual Duration:</label>
+                                    <input type="text" name="acduration" id="acduration" class="duration">Hr(s)&nbsp;
+                                    <input type="text" name="acduration" id="acduration" class="duration">Min(s)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fifteenth line of the fieldset  -->
+
+                    <div id="division17" class="row">
+                        <div class="d-flex">
+                            <div class="col-xl-6 col-12">
+                                <div id="div17sub1" class="d-flex ">
+                                    <div>
+                                        <label for="textbox" class="right-align-lables" id="textboxlbl">Perm. Solution:&nbsp;</label>
+                                    </div>
+                                    <div>
+                                        
+                                        <textarea name="textboxlast" id="textboxlast" class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="div17sub2" class="d-flex col-xl-6 col-12">
+                                <div >
+                                    <label for="textbox" id="textboxlbl">Special Remarks:&nbsp;</label>
+                                </div>
+                                <div>
+                                    <textarea name="textboxlast" id="textboxlast" class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </fieldset>
+            <div id="links" class="row " >
+                <div class="d-flex justify-content-center pt-5 ">
+                    <div class="px-2"><a href="#" class="text-decoration-none lastLinks">Save</a></div>
+                    <div class="px-2"><a href="#" class="text-decoration-none lastLinks">Save & Continue</a></div>
+                    <div class="px-2"><a href="#" class="text-decoration-none lastLinks">Save & New</a></div>
+                    <div class="px-2"><a href="#" class="text-decoration-none lastLinks">Save & New for same Client</a></div>
+                    <div class="px-2"><a href="#" class="text-decoration-none lastLinks">Reset</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
